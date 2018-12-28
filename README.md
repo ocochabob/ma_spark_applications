@@ -6,7 +6,7 @@ This repository contains sample CAN and US datasets in CSV format and sample spa
 
 ### data
 
-The data folder contains an artficially created CAN dataset and a real-world US dataset in CSV format.
+The data folder contains an artificially created CAN dataset and a real-world US dataset in CSV format.
 
 The CAN dataset consists of three columns:
 
@@ -42,13 +42,13 @@ To run adjusted or completely new spark scala applications, we need to build the
 
     `sbt package`
 
-in the csvToParquetApp.
+in the csvToParquetApp folder.
 
 To build a new application we need to create a new build.sbt file and the respective .scala file which needs to be placed in 'src/main/scala/' and run:
 
     `sbt package`
 
-The created .jar which is needed to run the respective application, is located in 'target/scala-x.xx/'.
+The created .jar which is needed to run the respective application is located in 'target/scala-x.xx/'.
 
 ## run scala applications
 
@@ -58,4 +58,4 @@ To run created spark scala applications we use the 'spark-submit' script which i
 
 Which parameters to use is documented in the source code of the respective application.
 
-Application and input files may need to be uploaded to the respective filesystem (HDFS, S3) before usage.
+Application and input files need to be uploaded to the respective filesystem (HDFS, S3) before usage.
